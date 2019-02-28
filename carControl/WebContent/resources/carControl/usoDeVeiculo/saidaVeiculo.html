@@ -1,0 +1,71 @@
+
+<script type="text/javascript"
+	src="/carControl/resources/carControl/js/saidaVeiculo.js"></script>
+<meta charset="UTF-8">
+
+<fieldset class="conteudo-fielset fielsetProcesso">
+
+	<legend>Saida de Veiculo</legend>
+
+	<form id="saida" class="form">
+		<div class="row">
+			<input name="idVeiculoS" id="idVeiculoSaida" type="hidden"></input> <input
+				name="idUsuario" id="idUsuario" type="hidden"></input>
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="marca">Marca</label> <input id="marca" name="txtmarca"
+						type="text" class="form-control" disabled></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="modelo">Modelo</label> <input id="modelo"
+						name="txtmodelo" type="text" class="form-control" disabled></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="cor">Cor</label> <input id="cor" name="txtcor"
+						type="text" class="form-control" disabled></input>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="placa">Placa</label> <input id="placa" name="txtplaca"
+						type="text" class="form-control" disabled></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="km">Km inicial</label> <input id="kmini" name="kmini"
+						type="number" class="form-control" disabled></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="data">Data/Hora</label>
+					<div id="datetimepicker1" class="input-append date">
+						<input id="idTimeField" data-format="dd/MM/yyyy hh:mm:ss"
+							type="text" class="form-control"></input> <span class="add-on">
+							<i data-time-icon="icon-time" data-date-icon="icon-calendar">
+						</i>
+						</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-3">
+
+				<button type="button" class="btn legenda" id="registraSaida"
+					onClick="CARCONTROL.veiculoSaida.validarSaida()">Validar Saida</button>
+			</div>
+		</div>
+	</form>
+</fieldset>
+<div id="msg" style="display: none"></div>

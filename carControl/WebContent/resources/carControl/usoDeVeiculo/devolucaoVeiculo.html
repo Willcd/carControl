@@ -1,0 +1,102 @@
+
+<script type="text/javascript"
+	src="/carControl/resources/carControl/js/devolucaoVeiculo.js"></script>
+<meta charset="UTF-8">
+
+<fieldset class="conteudo-fielset fielsetSaida">
+
+	<legend>Saída / Retirada</legend>
+
+	<form id="retorno" class="form">
+		<div class="row">
+			<input name="idVeiculo" id="idVeiculo" type="hidden"></input> <input
+				name="idUsuario" id="idUsuario" type="hidden"></input>
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="marca">Marca</label> <input id="marca" name="txtmarca"
+						type="text" class="form-control" disabled></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="modelo">Modelo</label> <input id="modelo"
+						name="txtmodelo" type="text" class="form-control" disabled></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="cor">Cor</label> <input id="cor" name="txtcor"
+						type="text" class="form-control" disabled></input>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="placa">Placa</label> <input id="placa" name="txtplaca"
+						type="text" class="form-control" disabled></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="kmini">Km inicial</label> <input id="kmini"
+						name="kmini" type="number" class="form-control" disabled></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="data">Data/Hora</label> <input id="dataHoraSaida"
+						name="dataHoraSaida" type="text" class="form-control" disabled></input>
+				</div>
+			</div>
+
+		</div>
+</fieldset>
+<fieldset class="conteudo-fielset fielsetRetorno">
+
+	<legend>Retorno / Devolução</legend>
+
+
+	<input name="idVeiculo" id="idVeiculo" type="hidden"></input> <input
+		name="idUsuario" id="idUsuario" type="hidden"></input><input
+		name="idUsoVeiculo" id="idUsoVeiculo" type="hidden"></input>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="form-group">
+				<label for="data">Data/Hora retorno</label>
+				<div id="datetimepicker1" class="input-append date">
+					<input id="idTimeField" data-format="dd/MM/yyyy hh:mm:ss"
+						type="text" class="form-control"></input>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+
+			<div class="form-group">
+				<label for="kmfim">Km final</label> <input id="kmfim" name="kmfim"
+					type="number" class="form-control"
+					placeholder="Informe a Km final.. " notnull></input>
+			</div>
+		</div>
+
+
+		<div class="col-md-3">
+			<div class="form-group">
+				<div class="row">
+					<label for="kmfim"></label>
+					<button type="button" class="btn legenda btnesq"
+						id="registraRetorno" name="registraRetorno"
+						onClick="return CARCONTROL.retornoVeiculo.validarRetorno()">Validar
+						Retorno</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</form>
+		<div class="row">
+		<div id="listaDevolucao" class="divResultado"></div>
+</div>
+</fieldset>
+
+<div id="msg" style="display: none"></div>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Compatibilidade com IE-->
+<meta name="viewport" content="width=device-width, initial-scale=1"><!--define a ocupação de toda a tela e possibilita o design responsivo-->
+
+<title>CarControl - Agenda de Veículos</title>
+
+<!-- css -->
+<link rel = "stylesheet" type="text/css" href = "/carControl/resources/css/jquery-ui-1.10.3.custom.css">
+<link rel = "stylesheet" type="text/css" href = "/carControl/resources/bootstrap/css/bootstrap.min.css"><!--Bootstrap-->
+<link rel = 'stylesheet' type="text/css" href = '/carControl/resources/carControl/agenda/fullcalendar-3.6.2/fullcalendar.css' /><!-- fullcalendar -->
+<link rel = "stylesheet" type="text/css" href = "/carControl/resources/estilo.css">
+
+
+<!-- js -->
+<script type = "text/javascript" src = "/carControl/resources/js/jquery-2.1.3.js"></script> 
+
+<script type = "text/javascript" src = "/carControl/resources/bootstrap/js/bootstrap.js"></script>
+<script type = "text/javascript" src = "/carControl/resources/js/jquery-ui.js"></script> 
+<script type = "text/javascript" src = "/carControl/resources/index.js"></script>
+<script type = "text/javascript" src = "/carControl/resources/carControl/js/menu.js"></script>
+<script type = "text/javascript" src = "/carControl/resources/js/ajax.js"></script>
+
+<script type = "text/javascript" src = "/carControl/resources/carControl/js/menu.js"></script>
+
+
+<script type = "text/javascript" src = '/carControl/resources/carControl/agenda/fullcalendar-3.6.2/lib/moment.min.js'></script>
+<script type = "text/javascript" src = '/carControl/resources/carControl/agenda/fullcalendar-3.6.2/fullcalendar.js'></script>
+<script type = 'text/javascript' src = '/carControl/resources/carControl/agenda/fullcalendar-3.6.2/gcal.js'></script>
+<script type = "text/javascript" src = '/carControl/resources/carControl/agenda/fullcalendar-3.6.2/locale/pt-br.js'></script>
+
+<script type = "text/javascript" src="/carControl/resources/carControl/js/base64.js"></script>
+
+
+
+
+<!-- PDF -->
+<script type="text/javascript"src="pdf/jspdf.js"></script>
+<script type="text/javascript"src="pdf/dist/jspdf.min.js"></script>
+
+
+
+
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="col-xs-12 col-sm-7 ">
+				<h1 id="titulo">CarControl</h1>
+				<h4 class="subtitulo">
+					<small id="subt">Controle de veiculos e frotas</small>
+				</h4>
+			</div>
+			<div class="row row2">
+				
+				<div
+					class="col-xs-12  col-sm-5  col-md-5 col-lg-4 col-lg-offset-1">
+					<div id="usg"></div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- -------------------------------------------------------------------------------------------------------------- -->
+
+	<div class="container menu">
+		<div class="row row2">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="col-xs-12 col-sm-11 col-md-11 col-lg-11">
+					<div id="menu"></div>
+					<div id="calendario"></div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<div id="1"></div>
+				<div id="2"></div>
+				<div class="row">
+				<div class="form" id="3"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+<br><br><br>
+
+
+	<nav class="navbar navbar-fixed-bottom navbar-inverse"></nav>
+
+</body>
+</html>

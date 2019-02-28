@@ -1,0 +1,105 @@
+<script type="text/javascript" 	src="/carControl/resources/carControl/js/condutor.js"></script>
+<meta charset="UTF-8">
+<fieldset class="conteudo-fielset fielsetCadastro">
+	<legend>Cadastro de Condutor</legend>
+
+	<form id="cadastrarCondutor" class="form">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="nome">Nome</label> <input id="nome" name="nome"
+						type="text" class="form-control"></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="snome">Sobrenome</label><input id="snome" name="snome"
+						type="text" class="form-control"></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="dtnasc">Data de nascimento</label>
+					<div class="input-group date" data-provide="datepicker">
+						<input id="dtnasc" name="dtnasc" type="date" class="form-control" />
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-th"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="cpf">CPF</label> <input id="cpf" name="cpf"
+						type="number" class="form-control" required></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="rg">RG</label> <input id="rg" name="rg" type="text"
+						class="form-control" required></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="cnh">CNH</label> <input id="cnh" name="cnh"
+						type="number" class="form-control" required></input>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="email">e-mail</label> <input id="email" name="email"
+						type="text" class="form-control" required></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="telefone">Telefone</label> <input id="telefone"
+						name="telefone" type="text" class="form-control" required></input>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<!--  -->
+				<div class="form-group">
+					<div class="input-inline">
+						<label class=''> <input type="checkbox" name="adm"
+							id="adm" value="true" class=''> Usuario é Administrador
+							do Sistema
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="senha"">Senha</label> <input id="senha" name="senha"
+						type="text" class="form-control" required></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="rsenha">Repita a senha</label> <input id="rsenha"
+						name="rsenha" type="text" class="form-control" required></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<button class="btn btn-default" onclick="reset">Limpar</button>
+					<button type="button" class="btn btn-info legenda" onclick="return CARCONTROL.condutor.cadastrar()">Cadastrar</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</fieldset>
+<div id="msg" style="display: none"></div>
+
+

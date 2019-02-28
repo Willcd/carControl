@@ -1,0 +1,90 @@
+<meta charset="UTF-8">
+
+<fieldset class="conteudo-fieldset fieldsetConsulta">
+	<div class="row2">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+			<legend>Consulta de Condutores</legend>
+
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="input-group">
+				<input type="text" class="form-control" id="consultaCondutor"
+					placeholder="Informe o nome do condutor..."> <span
+					class="input-group-btn">
+					<button type="button" class="btn legenda" id="consultaVDisponivel"
+						value="Buscar" onClick="return CARCONTROL.condutor.buscar()">Pesquisar</button>
+				</span>
+			</div>
+			<!-- /input-group -->
+		</div>
+
+
+		<div id="resultadoCondutores" class="divResultado"></div>
+	</div>
+</fieldset>
+
+<div id="editarCondutor" class="form-inline" style="display: none">
+	<form class="form-horizontal">
+		<input name="idCondutorEdit" id="idCondutorEdit" type="hidden"></input>
+		<input name="salCondutorEdit" id="salCondutorEdit" type="hidden"></input>
+
+		<div class="col-md-12">
+			<br>
+			<div class="div-form">
+				<label class="control-label col-sm-5"> Nome</label> 
+				<div class="col-sm-7"><input id="nomeEdit" name="nomeEdit"
+					type="text" class="form-control" required></input></div>
+			</div>
+			<div class="div-form">
+				<label class="control-label col-sm-5"> Sobrenome</label> 
+				<div class="col-sm-7"><input id="snomeEdit" name="snomeEdit"
+					type="text" class="form-control" required></input></div>
+			</div>
+			<div class="div-form">
+				<label class="control-label col-sm-5"> Data de nascimento</label> 
+				<div class="col-sm-7"><input id="dtnascEdit"
+					name="dtnascEdit" type="date" class="form-control" required></input></div>
+			</div>
+			<div class="div-form">
+				<label class="control-label col-sm-5"> CPF</label> <div class="col-sm-7"><input id="cpfEdit" name="cpfEdit" type="text"
+					class="form-control" required></input></div>
+			</div>
+			<div class="div-form">
+				<label class="control-label col-sm-5"> RG</label> <div class="col-sm-7"><input id="rgEdit" name="rgEdit" type="text"
+					class="form-control " required></input></div>
+			</div>
+			<div class="div-form">
+				<label class="control-label col-sm-5"> CNH</label> <div class="col-sm-7"><input id="cnhEdit" name="cnhEdit" type="text"
+					class="form-control " required></input></div>
+			</div>
+			<div class="div-form">
+				<label class="control-label col-sm-5" > e-mail</label> <div class="col-sm-7"><input id="mailEdit" name="mailEdit"
+					type="text" class="form-control" required></input></div>
+			</div>
+			<div class="div-form">
+				<label class="control-label col-sm-5"> Telefone</label> <div class="col-sm-7"><input id="foneEdit" name="foneEdit"
+					type="text" class="form-control" required></input></div>
+			</div>
+			<div class="div-form">
+				<div class="input-inline">
+					 <div class="col-sm-7 col-sm-offset-5"><input type="checkbox" name="admEdit" id="admEdit"
+						value="true" class='form-control'> Usuario é Administrador
+						do Sistema
+					
+				</div>
+			</div>
+			</div>
+			<div class="div-form">
+				<label class="control-label col-sm-5"> Senha</label> <div class="col-sm-7"><input id="senhaEdit" name="senhaEdit"
+					type="text" class="form-control" required></input></div>
+			</div>
+			<div class="div-form">
+				<label class="control-label col-sm-5"> Repita a Senha</label> <div class="col-sm-7"><input id="rsenhaEdit"
+					name="rsenhaEdit" type="text" class="form-control" required></input></div>
+			</div>
+
+		</div>
+
+	</form>
+</div>

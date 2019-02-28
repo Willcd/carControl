@@ -1,0 +1,68 @@
+<script type="text/javascript"src="/carControl/resources/carControl/js/pesquisaAbastecimento.js"></script>
+
+<meta charset="UTF-8">
+<fieldset class="conteudo-fielset fielsetCadastro">
+	<legend>Pesquisar Historico de Abastecimento</legend>
+
+	<form id="relatorio" class="form">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="form-group">
+					<label for="pesquisa">Pesquisa por:</label> <select
+						id="tipoPesquisa" class="form-control"
+						onchange="CARCONTROL.relatorioAbastecimento.tipoPesquisa()">
+						<option value="0">Selecione</option>
+						<option value="1">Condutor</option>
+						<option value="2">Veiculo</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="listaPesquisa" id="labelPequisa"></label> <select
+						id="listaPesquisa" name="listaPesquisa" class="form-control">
+						<option value="0">Selecione</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="form-group">
+					<label for="dataInicial">De</label> <input id="dataInicial"
+						name="dataInicial" type="date" class="form-control" />
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<label for="dataFinal">Até</label> <input id="dataFinal"
+						name="dataFinal" type="date" class="form-control" />
+				</div>
+			</div>
+
+
+			 <div class="col-md-2 col-md-offset-1 ">
+				<div class="form-group text-right">
+					<label for="button"></label>
+					<button type="button" class="btn btn-info legenda"
+						onclick="CARCONTROL.relatorioAbastecimento.pesquisaAbastecimentoDeVeiculo()">Pesquisar</button>
+				</div>
+			</div> 
+		</div>
+	</form>
+</fieldset>
+<div id="msg" style="display: none"></div>
+<fieldset class="conteudo-fieldset fieldsetConsulta">
+	<div class="row">
+		<div class="row2">
+			<!-- <div class="col-md-12">
+				<legend>Relatório de pesquisa</legend>
+
+			</div> -->
+			<div class="col-md-12">
+				<div id="listaRelatorio" class="divResultado"></div>
+			</div>
+			
+		</div>
+	</div>
+</fieldset>

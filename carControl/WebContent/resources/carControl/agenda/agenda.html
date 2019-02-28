@@ -1,0 +1,72 @@
+
+<script type="text/javascript"
+	src="/carControl/resources/carControl/js/agenda.js"></script>
+
+<meta charset="UTF-8">
+<!-- teste -->
+
+<!-- label superior -->
+
+<!-- Main content -->
+
+<section class="content">
+	<div class="col-md-12">
+		<div class="box box-primary">
+			<!-- THE CALENDAR -->
+			<div id="calendar"></div>
+		</div>
+	</div>
+</section>
+<div id="msg" style="display: none"></div>
+<div class="col-md-12">
+	<div class="text-right">
+		<br>
+		<button type="button" class="btn legenda"
+			onclick="CARCONTROL.agendaUso.buscaListaVeiculo()">Agendamento</button>
+
+	</div>
+</div>
+
+<div id="frmAgendaVeiculo" class="form-group" style="display: none">
+	<meta charset="UTF-8">
+			<div class="col-md-7">
+			<br>
+				<label for="selectVeiculo">Selecione um veiculo</label> <select
+					id="selectVeiculo" name="selectVeiculo" class="form-control"
+					required><option value="0">Selecione</option> </select> 
+				<br>
+				<label> Observação:</label> <input id="obs" name="obs" type="text"
+					class="form-control"></input>
+			</div>
+			<div class="col-md-5">
+			<br>
+				<label> Data / hora saida</label> <input id="dataHoraSaida"
+					name="dataHoraSaida" type="datetime-local" class="form-control"
+					required></input> 
+					<br>
+				<label> Data / hora retorno</label> <input
+					id="dataHoraRetorno" name="dataHoraRetorno" type="datetime-local"
+					class="form-control" required></input>
+			</div>
+</div>
+
+
+<div id="agendamento" class="form-group" style="display: none">
+	<meta charset="UTF-8">
+
+	<form id="agendament" class="form-group form-control">
+		<div class="col-md-12">
+			
+				<input name="idAgendam" id="idAgend" type="hidden"></input>
+			
+			<label> Saida: </label> <input id="datas" name="datas" type="text" class="form-control"></input> 
+			<label> Previsão de retorno: </label> <input id="datar" name="datar" type="text" class="form-control"></input> 
+			<label> Condutor:</label> <input id="condutor" name="condutor" type="text" class="form-control"></input> 
+			<label> Veiculo:</label> <input id="veiculo" name="veiculo" type="text" class="form-control"></input>
+			<label> Placa:</label> <input id="placa" name="placa" type="text" class="form-control"></input> 
+			<label> Evento:</label> <input id="evento" name="evento" type="text" class="form-control"></input>
+
+		</div>
+	</form>
+
+

@@ -1,0 +1,48 @@
+
+<meta charset="UTF-8">
+
+<fieldset class="conteudo-fieldset fieldsetConsulta">
+	<div class="row2">
+		<legend>Consulta de Veiculos</legend>
+		<div class="form-group dir">
+			<form class="form-inline" >			
+				<label for="consultaVeiculo">Informe a placa do veiculo:</label> 
+				<input class="form-control" id="consultaVeiculo" type="text"></input>
+				<button type="button"  class="btn legenda" id="consultaVeiculo"
+					value="Buscar" onClick="return CARCONTROL.veiculo.buscar()">Pesquisar</button>
+			</form>
+		</div>
+		<div id="resultadoVeiculos" class="divResultado"></div>
+</div>
+</fieldset>
+
+
+<div id="editarVeiculo" style="display: none">
+
+	<input name="idVeiculoEdit" id="idVeiculoEdit" type="hidden"></input>
+
+	<div class="div-form">
+		<label> Marca</label> <input id="marcaEdit" name="marcaEdit"
+			type="text"></input>
+	</div>
+	<div class="div-form">
+		<label> Modelo</label> <input id="modeloEdit" name="modeloEdit"
+			type="text"></input>
+	</div>
+	<div class="div-form">
+		<label> Cor</label> <input id="corEdit" name="corEdit" type="text"></input>
+	</div>
+	<div class="div-form">
+		<label> Placa</label> <input id="placaEdit" name="placaEdit"
+			type="text"></input>
+	</div>
+	<div class="div-form">
+		<label> Chassi</label> <input id="chassiEdit" name="chassiEdit"
+			type="text"></input>
+	</div>
+	<div class="div-form">
+		<label> Km</label> <input id="kmEdit" name="kmEdit"
+			type="number"></input>
+	</div>
+
+</div>

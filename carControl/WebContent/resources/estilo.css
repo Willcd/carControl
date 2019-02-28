@@ -1,0 +1,162 @@
+th{
+    line-height: 90%;
+	margin-top: 10%;
+	text-align: center;
+	font-size: 15px;	
+}
+td{
+    line-height: 90%;
+	margin-top: 10%;
+	text-align: center;
+	font-size: 15px;
+	
+}
+
+.cor-icone {
+	color: darkgoldenrod;
+}
+
+.estilo {
+	font-size: 12px;
+}
+
+.icone {
+	width: 15px;
+	height: 13px;
+}
+
+.icone-nav {
+	color: darkgoldenrod;
+	font-size: 15px;
+}
+
+.labelAgenda {
+	align-content: center;
+	text-align: center;
+	font-size: 14px;
+}
+
+.legenda {
+	background-color: darkgoldenrod;
+	align-content: center;
+	text-align: center;
+}
+
+.menu {
+	font-size: 10px;
+	margin-top: 20px;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.navbar-static-bottom { @extend .navbar-fixed-bottom;
+	position: relative;
+	border-width: 1px 1px 0;
+}
+
+.row2 {
+	margin-top: 10px;
+}
+
+.subtitulo {
+	color: darkgoldenrod;
+	margin-top: -12px;
+	margin-left: 75px;
+}
+
+.tela {
+	margin-top: 10px;
+}
+
+.alinDir {
+	position: absolute;
+	right: 15px;
+	top: 18px;
+}
+
+.alinDirGrid {
+	position: absolute;
+	width: 10 px;
+	height: 5 px;
+	 bottom: 10 px;
+    right: 10 px ;
+	margin-rigth: -8 px;
+	margin-top: -10 px;
+	
+}
+
+#calendario {
+	max-width: 100%;
+	height: auto;
+}
+
+#img1 {
+	margin-left: inherit;
+}
+
+#log {
+	background-color: darkgoldenrod;
+}
+
+#subt {
+	color: darkgoldenrod;
+}
+
+#tema {
+	background-color:;
+}
+
+#titulo {
+	color: white;
+}
+
+#usuarioLogado {
+	vertical-align: text-bottom;
+	font-size: 14px;
+    float: left;
+
+}
+#usuariol {
+    display: block;
+    float: left;
+    width: 160px;
+    height: 20px;
+}
+
+
+<!--
+------------------------------------------
+-->
+.titulo {
+	text-align: inherit;
+	text-decoration-color: azure;
+	width: inherit;
+	font-weight: bold;
+}
+
+.subtitulo {
+	margin-top: -6px;
+	margin-left: 45px;
+	font-size: 14px;
+}
+
+<!--
+-------
+-cadastrarveiculo------------><!-- --------cadastrarcondutor------------>
+
+.btnesq
+	{
+	margin-top: 16px;
+	padding-top: 15px;
+}
+
+.btn-tam-unico {
+	
+}
+
+<!--
+-------
+-cadastrardevoluçao------------>#registraRetorno {
+	margin-top: 16px;
+	padding-top: 15px;
+}

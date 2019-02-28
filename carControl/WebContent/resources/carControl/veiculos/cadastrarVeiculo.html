@@ -1,0 +1,64 @@
+
+<script type="text/javascript"
+	src="/carControl/resources/carControl/js/veiculos.js"></script>
+
+
+<meta charset="UTF-8">
+<fieldset class="conteudo-fielset fielsetCadastro">
+
+	<legend>Cadastro de Veiculo</legend>
+
+	<form id="cadastrarVeiculo" class="form">
+
+		<div class="row">
+
+			<div class="col-md-4">
+
+				<div class="form-group">
+
+					<label for="marca">Marca</label> <input id="marca" name="txtmarca"
+						type="text" class="form-control"required></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="modelo">Modelo</label> <input id="modelo"
+						name="txtmodelo" type="text" class="form-control"required></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="cor">Cor</label> <input id="cor" name="txtcor"
+						type="text" class="form-control"required></input>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="placa">Placa</label> <input id="placa" name="txtplaca"
+						type="text" class="form-control"required></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="chassi">Chassi</label> <input id="chassi"
+						name="txtchassi" type="text" class="form-control"required></input>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="km">Km</label> <input id="km" name="intkm"
+						type="number" class="form-control"required></input>
+				</div>
+			</div>
+		</div>
+		<button class="btn btn-default" onclick="reset">Limpar</button>
+		<button type="button" class="btn btn-info legenda"
+			onclick="return CARCONTROL.veiculo.cadastrar()">Cadastrar</button>
+	</form>
+</fieldset>
+<div id="msg" style="display: none"></div>
+
+

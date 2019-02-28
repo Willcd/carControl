@@ -1,0 +1,101 @@
+
+<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="fullcalendar/fullcalendar.min.css" />
+    <link rel="stylesheet" href="fullcalendar/fullcalendar.print.min.css"  media="print" />
+    <link rel="stylesheet" type="text/css" href="css/calendario.css"/>
+    <script src="fullcalendar/lib/moment.min.js"></script>
+    <script src="fullcalendar/lib/jquery.min.js"></script>
+    <script src="fullcalendar/fullcalendar.min.js"></script>
+    <script src="fullcalendar/locale/pt-br.js"></script>
+    <script src="fullcalendar/gcal.min.js"></script>
+    <script src="js/calendario.js"></script>
+
+	<div id="calendar"></div>
+	<div id="loading">loading...</div>
+	
+	
+<!-- 
+$(document).ready(function() {
+
+  // page is now ready, initialize the calendar...
+
+  $('#calendar').fullCalendar({
+    // put your options and callbacks here
+    selectable: true,
+    editable: true,
+    select: function(start, end, allDay) {
+      $("#addEvent").show();
+      $("#editEvent").hide();
+      $("#addNew-event").modal("show");
+      $("#addNew-event input:text").val("");
+      $("#getStart").val(start);
+      $("#getEnt").val(end);
+    },
+    eventClick: function(event, element) {
+      $("#addEvent").hide()
+      $("#editEvent").show().data("ev", event);
+      $("#addNew-event").modal("show");
+      $("#addNew-event input:text").val("");
+      $("#eventName").val(event.title);
+    }
+  });
+
+  $("body").on("click", "#addEvent", function() {
+    var eventName = $("#eventName").val();
+    $("#calendar").fullCalendar("renderEvent", {
+      title: eventName,
+      start: $("#getStart").val(),
+      end: $("#getEnd").val()
+    }, true);
+
+    $("#addNew-event form")[0].reset();
+    $("#addNew-event").modal("hide");
+  });
+  $("body").on("click", "#editEvent", function() {
+    var eventName = $("#eventName").val();
+    var ev = $(this).data("ev");
+    ev.title = eventName;
+    $("#calendar").fullCalendar("updateEvent", ev);
+
+    $("#addNew-event form")[0].reset();
+    $("#addNew-event").modal("hide");
+  });
+
+});
+-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+crossorigin="anonymous">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css" rel="stylesheet" />
+
+<div id='calendar'></div>
+<div class="modal fade" id="addNew-event" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Adicionar evento</h4>
+      </div>
+      <div class="modal-body">
+        <form class="addEvent" role="form">
+          <div class="form-group has-error">
+            <label for="eventName">Nome do evento</label>
+            <div class="fg-line">
+              <input type="text" class="input-sm form-control" id="eventName" placeholder="exemplo: Reunião">
+            </div>
+          </div>
+          <input type="hidden" id="getStart">
+          <input type="hidden" id="getEnd">
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary btn-sm" id="addEvent">Adicionar</button>
+        <button type="submit" class="btn btn-primary btn-sm" id="editEvent">Editar</button>
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</script>
